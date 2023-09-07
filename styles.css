@@ -1,0 +1,10 @@
+body {
+  margin: 50px;
+  padding: 30px;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px black;
+}
+
+p, li, a {
+  font-size: 20px;
+}/*# sourceMappingURL=styles.css.map */
