@@ -1,10 +1,96 @@
+@keyframes moveText {
+  from {
+    transform: translateX(-1000vh);
+  }
+  to {
+    transform: translateX(0px);
+    color: black;
+  }
+}
+@keyframes backgroundImage {
+  0% {
+    background-image: url("./photo.jpg");
+    border: 1px solid black;
+  }
+  100% {
+    background-image: url("./photo.jpg");
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  animation: 2s ease-in-out 1s 1 forwards moveText;
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+  animation: 2s ease-in-out 10s 1 forwards backgroundImage;
+}
+
+:root {
+  color: transparent;
+  animation: 2s ease-in-out 0s 1 forwards moveText;
+  background-color: #DAFFFB;
+}
+
+.one {
+  color: transparent;
+  animation: 2s ease-in-out 2s 1 forwards moveText;
+}
+
+.two {
+  color: transparent;
+  animation: 2s ease-in-out 3s 1 forwards moveText;
+}
+
+.three {
+  color: transparent;
+  animation: 2s ease-in-out 4s 1 forwards moveText;
+}
+
+.four {
+  color: transparent;
+  animation: 2s ease-in-out 5s 1 forwards moveText;
+}
+
+.five {
+  color: transparent;
+  animation: 2s ease-in-out 6s 1 forwards moveText;
+}
+
+.six {
+  color: transparent;
+  animation: 2s ease-in-out 7s 1 forwards moveText;
+}
+
+.seven {
+  color: transparent;
+  animation: 2s ease-in-out 8s 1 forwards moveText;
+}
+
+.eight {
+  color: transparent;
+  animation: 2s ease-in-out 9s 1 forwards moveText;
+}
+
 body {
   margin: 50px;
   padding: 30px;
   border: 2px solid black;
   box-shadow: 10px 10px 10px black;
+  background-image: url("./ciel.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 p, li, a {
   font-size: 20px;
+}
+
+body {
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
