@@ -20,11 +20,16 @@
   }
 }
 .canvas {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(50px, auto);
 }
 
 #TD {
+  height: 100%;
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/7;
   color: transparent;
   animation: 2s ease-in-out 4s 1 forwards moveText;
 }
@@ -59,31 +64,43 @@
 }
 
 .three {
+  grid-column: 1/2;
+  grid-row: 1;
   color: transparent;
   animation: 2s ease-in-out 4s 1 forwards moveText;
 }
 
 .four {
+  grid-column: 1/2;
+  grid-row: 2;
   color: transparent;
   animation: 2s ease-in-out 5s 1 forwards moveText;
 }
 
 .five {
+  grid-column: 1/2;
+  grid-row: 3;
   color: transparent;
   animation: 2s ease-in-out 6s 1 forwards moveText;
 }
 
 .six {
+  grid-column: 1/2;
+  grid-row: 4;
   color: transparent;
   animation: 2s ease-in-out 7s 1 forwards moveText;
 }
 
 .seven {
+  grid-column: 1/2;
+  grid-row: 5;
   color: transparent;
   animation: 2s ease-in-out 8s 1 forwards moveText;
 }
 
 .eight {
+  grid-column: 1/2;
+  grid-row: 6;
   color: transparent;
   animation: 2s ease-in-out 9s 1 forwards moveText;
 }
@@ -105,8 +122,4 @@ body {
 
 p, li, a {
   font-size: 20px;
-}
-
-.canvas {
-  display: flex;
 }/*# sourceMappingURL=styles.css.map */
