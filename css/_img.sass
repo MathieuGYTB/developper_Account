@@ -1,2 +1,79 @@
 img
   visibility: hidden
+
+//function to display background image in border radius 50%
+@keyframes backgroundImage
+  0% 
+    background-image: url("../assets/images/photo.jpg")
+    background-size: cover
+    border: 1px solid black
+    
+  100%
+    background-image: url("../assets/images/photo.jpg")
+    background-size: cover
+    border: 2px solid black
+    border-radius: 50%
+
+
+@media screen and (min-width: 1374px)
+  img
+    height: 30px
+  .image
+    height: 200px
+    width: 200px
+    box-shadow: inset 10px 10px 10px black
+    animation: 2s ease-in-out 10s 1 forwards backgroundImage
+
+@media screen and (max-width: 1374px)
+  img
+    height: 25px
+  .image
+    height: 150px
+    width: 150px
+    box-shadow: inset 7px 7px 7px black
+    animation: 2s ease-in-out 10s 1 forwards backgroundImage
+
+@media screen and (max-width: 1135px)
+  img
+    height: 20px
+  .image
+    height: 100px
+    width: 100px
+    box-shadow: inset 5px 5px 5px black
+    animation: 2s ease-in-out 10s 1 forwards backgroundImage
+
+@media screen and (max-width: 900px)
+  img
+    height: 15px
+  .image
+    height: 50px
+    width: 50px
+    box-shadow: inset 3px 3px 3px black
+    animation: 2s ease-in-out 10s 1 forwards backgroundImage
+
+@media screen and (max-width: 868px)
+  img
+    height: 10px
+  .image
+    height: 25px
+    width: 25px
+    box-shadow: inset 2px 2px 2px black
+    animation: 2s ease-in-out 10s 1 forwards backgroundImage
+
+@media screen and (max-width: 580px)
+  img
+    height: 5px
+  .image
+    height: 20px
+    width: 20px
+    box-shadow: inset 1px 1px 1px black
+    animation: 2s ease-in-out 10s 1 forwards backgroundImage
+
+@media screen and (max-width: 300px)
+  img
+    height: 5px
+  .image
+    height: 15px
+    width: 15px
+    box-shadow: inset 1px 1px 1px black
+    animation: 2s ease-in-out 10s 1 forwards backgroundImage
