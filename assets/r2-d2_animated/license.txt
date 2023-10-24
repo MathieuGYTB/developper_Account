@@ -1,0 +1,11 @@
+Model Information:
+* title:	R2-D2 (Animated)
+* source:	https://sketchfab.com/3d-models/r2-d2-animated-476fe6527305404cb0d7e1ebe9eead63
+* author:	StarWars-Universe (https://sketchfab.com/SWU)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "R2-D2 (Animated)" (https://sketchfab.com/3d-models/r2-d2-animated-476fe6527305404cb0d7e1ebe9eead63) by StarWars-Universe (https://sketchfab.com/SWU) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Developper web site</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/"
+        }
+    }
+</script>
 </head>
 <body>
   <div class="title">
@@ -12,30 +20,37 @@
     <div class="image"></div>
   </div>
   <h2 class="one">Présentation :</h2>
-  <p class="two">Bonjour je suis Mathieu Guyot, un développeur full stack freelance utilisant les langages suivant :</p>
+  <p class="two"><strong>je suis Mathieu Guyot, un développeur full stack freelance utilisant les langages suivant :</strong></p>
   <div class="canvas">
-    <ul class="three">
-      <li>HTML</li>
-      <li>css/scss</li>
-      <li>Javascript</li>
-      <li>PHP</li>
-      <li>React native</li>
-    </ul>
-    <canvas id="TD"></canvas>
-    <p class="four">Ainsi que les framework suivant :</p>
-    <ul class="five">
-      <li>Bootstrap</li>
-      <li>React</li>
-      <li>Symfony</li>
-      <li>Expo</li>
-    </ul>
-    <p class="six">J'ai créer ma micro entreprise nommée MG Production :<br><br><strong>numéro de siret :</strong> 83218902100021,<br><strong>code APE :</strong>  6201Z,<br><strong>adresse :</strong>  1 avenue de Fribourg 68000 Colmar France,<br><strong>adresse e-mail :</strong>  <a href="mailto: MG.Production.Mathieu.Guyot@gmail.com">MG.Production.Mathieu.Guyot@gmail.com</a>,<br><strong>numéro de téléphone :</strong>  <a href="tel: 06.63.02.79.29">06.63.02.79.29</a></p>
-    <h2 class="seven">Mes projets déjà réalisés :</h2>
-    <ul class="eight">
+    <p class="three">-HTML</p>
+    <p class="four">-css/scss</p>
+    <p class="five">-Javascript</p>
+    <p class="six">-PHP</p>
+    <p class="seven">-React native</p>
+    <img class="t1" src="./assets/images/html.png" alt="logo html" height="30px"/>
+    <img class="t2" src="./assets/images/sass-css.png" alt="logo css" height="30px"/>
+    <img class="t3" src="./assets/images/JavaScript.png" alt="logo javascript" height="30px"/>
+    <img class="t4" src="./assets/images/php.png" alt="logo PHP" height="30px"/>
+    <img class="t5" src="./assets/images/react-native.png" alt="logo React native" height="30px"/>
+    <canvas id="TD" width="100%" height="100%"></canvas>
+    <p class="eight"><strong>que les framework suivant :</strong></p>
+    <p class="nine">-Bootstrap</p>
+    <p class="ten">-React</p>
+    <p class="eleven">-Symfony</p>
+    <p class="twelve">-Expo</p>
+    <p class="thirdteen">-CMS WORDPRESS</p>
+    <img class="f1" src="./assets/images/bootstrap.png" alt="logo bootstrap" height="30px"/>
+    <img class="f2" src="./assets/images/react.png" alt="logo React" height="30px"/>
+    <img class="f3" src="./assets/images/symfony.png" alt="logo Symfony" height="30px"/>
+    <img class="f4" src="./assets/images/expo.png" alt="logo Expo" height="30px"/>
+    <img class="f5" src="./assets/images/wordpress.jpg" alt="logo Wordpress" height="30px"/>
+    <p class="fourteen">J'ai créer ma micro entreprise nommée MG Production :<br><br><strong>numéro de siret :</strong> 83218902100021,<br><strong>code APE :</strong>  6201Z,<br><strong>adresse :</strong>  1 avenue de Fribourg 68000 Colmar France,<br><strong>adresse e-mail :</strong>  <a href="mailto: MG.Production.Mathieu.Guyot@gmail.com">MG.Production.Mathieu.Guyot@gmail.com</a>,<br><strong>numéro de téléphone :</strong>  <a href="tel: 06.63.02.79.29">06.63.02.79.29</a></p>
+    <h2 class="fifteen">Mes projets déjà réalisés :</h2>
+    <ul class="sixteen">
       <li>Site web : <a href="https://dice-game-studi.netlify.app/">Jeu de dé</a></li>
       <li>Application mobile : <a href="//play.google.com/store/apps/details?id=com.mg_production.myposition&pcampaignid=web_share">Ma position</a></li>
     </ul>
   </div>
-  <script src="main.js" type="module"></script>
+  <script src="./main.js" type="module"></script>
 </body>
 </html>
