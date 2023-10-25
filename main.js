@@ -9,20 +9,28 @@ const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
   alpha: true
 });
-
-const loader = new GLTFLoader();
-loader.load("./assets/r2-d2_animated/scene.gltf", (gltfScene) => {
+let mesh;
+const loader = new GLTFLoader().setPath("./assets/r2-d2_animated/");
+loader.load("scene.gltf", (gltfScene) => {
   //loadedModel = gltfScene
-  scene.add(gltfScene.scene);
+  mesh = gltfScene.scene;
+  mesh.position.set(0, -0.5, 0)
+  scene.add(mesh);
 });
 
-const light = new THREE.PointLight(0xeeeeee);
+const light = new THREE.AmbientLight(0xeeeeee, 4);
 
 scene.add(light);
 
-camera.position.set(0, 1.5, 4);
-light.position.set(0, 4, 4);
+camera.position.set(0, 0, 1);
+light.position.set(0, 0, 1);
 
-renderer.setClearColor(0xffffff, 0);
-renderer.render(scene,camera);
+function animate() {
+  requestAnimationFrame(animate);
+  mesh.rotation.y += 0.005;
+  renderer.setClearColor(0xffffff, 0);
+  renderer.setPixelRatio(devicePixelRatio);
+  renderer.render(scene,camera);
+};
 
+animate();

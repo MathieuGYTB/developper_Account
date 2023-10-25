@@ -30,14 +30,14 @@ $grid2-3: col(2 , 3)
 
 .canvas
   display: grid
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: 1fr 0.1fr 2.9fr
   grid-auto-rows: minmax(1px, auto)
 
 #TD
   height: 100%
   width: 100%
   grid-column: 3/ 4
-  grid-row: 1/ 15
+  grid-row: 1/ 12
 
 .title
   width: 100%
@@ -197,6 +197,11 @@ $grid2-3: col(2 , 3)
   grid-row: 14/ 15
   color: $transparent
   animation: 2s ease-in-out 9s 1 forwards moveText
+
+.seventeen
+  font-size: 12px
+  grid-column: 3 / 4
+  grid-row: 12 /13
 
 a
   color: $transparent
