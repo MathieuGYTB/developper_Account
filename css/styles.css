@@ -459,7 +459,9 @@ a {
 }
 @media screen and (max-width: 580px) {
   body {
-    margin: 5px;
+    margin-top: 15%;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 3px;
     border: 1px solid black;
     box-shadow: 1px 1px 1px black;
@@ -470,7 +472,9 @@ a {
 }
 @media screen and (max-width: 300px) {
   body {
-    margin: 2px;
+    margin-top: 15%;
+    margin-left: 3px;
+    margin-right: 3px;
     padding: 1px;
     border: 1px solid black;
     box-shadow: 1px 1px 1px black;
@@ -513,18 +517,10 @@ a {
 }
 @media screen and (max-width: 580px) {
   p, li, a {
-    font-size: 5px;
+    font-size: 7px;
   }
   h1, h2 {
     font-size: 10px;
-  }
-}
-@media screen and (max-width: 300px) {
-  p, li, a {
-    font-size: 3px;
-  }
-  h1, h2 {
-    font-size: 5px;
   }
 }
 img {
@@ -540,7 +536,6 @@ img {
   100% {
     background-image: url("../assets/images/photo.jpg");
     background-size: cover;
-    border: 2px solid black;
     border-radius: 50%;
   }
 }
@@ -552,6 +547,7 @@ img {
     height: 200px;
     width: 200px;
     box-shadow: inset 10px 10px 10px black;
+    border: 2px solid black;
     animation: 2s ease-in-out 10s 1 forwards backgroundImage;
   }
 }
@@ -563,6 +559,7 @@ img {
     height: 150px;
     width: 150px;
     box-shadow: inset 7px 7px 7px black;
+    border: 2px solid black;
     animation: 2s ease-in-out 10s 1 forwards backgroundImage;
   }
 }
@@ -574,6 +571,7 @@ img {
     height: 100px;
     width: 100px;
     box-shadow: inset 5px 5px 5px black;
+    border: 2px solid black;
     animation: 2s ease-in-out 10s 1 forwards backgroundImage;
   }
 }
@@ -584,6 +582,7 @@ img {
   .image {
     height: 50px;
     width: 50px;
+    border: 2px solid black;
     box-shadow: inset 3px 3px 3px black;
     animation: 2s ease-in-out 10s 1 forwards backgroundImage;
   }
@@ -595,6 +594,7 @@ img {
   .image {
     height: 25px;
     width: 25px;
+    border: 2px solid black;
     box-shadow: inset 2px 2px 2px black;
     animation: 2s ease-in-out 10s 1 forwards backgroundImage;
   }
@@ -606,6 +606,7 @@ img {
   .image {
     height: 20px;
     width: 20px;
+    border: 2px solid black;
     box-shadow: inset 1px 1px 1px black;
     animation: 2s ease-in-out 10s 1 forwards backgroundImage;
   }
@@ -617,6 +618,7 @@ img {
   .image {
     height: 15px;
     width: 15px;
+    border: 1px solid black;
     box-shadow: inset 1px 1px 1px black;
     animation: 2s ease-in-out 10s 1 forwards backgroundImage;
   }
