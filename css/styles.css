@@ -601,24 +601,12 @@ img {
 }
 @media screen and (max-width: 580px) {
   img {
-    height: 5px;
+    height: 7px;
   }
   .image {
     height: 20px;
     width: 20px;
     border: 2px solid black;
-    box-shadow: inset 1px 1px 1px black;
-    animation: 2s ease-in-out 10s 1 forwards backgroundImage;
-  }
-}
-@media screen and (max-width: 300px) {
-  img {
-    height: 5px;
-  }
-  .image {
-    height: 15px;
-    width: 15px;
-    border: 1px solid black;
     box-shadow: inset 1px 1px 1px black;
     animation: 2s ease-in-out 10s 1 forwards backgroundImage;
   }
