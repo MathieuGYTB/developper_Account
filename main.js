@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 //target dom element
 const canvas = document.querySelector('#TD');
@@ -17,9 +18,12 @@ const light = new THREE.PointLight(0xeeeeee, 4);
 scene.add(light);
 
 //set position
-camera.position.set(0, 0, 1);
+camera.position.set(0, 0.6, 1.5);
+camera.rotateX(50);
 light.position.set(0, 0.7, 1);
-
+//create orbit controller
+const controls = new OrbitControls( camera, canvas );
+controls.update();
 function resizeRendererToDisplaySize(renderer) {
   const canvas = renderer.domElement;
   var width = window.innerWidth;
@@ -33,10 +37,10 @@ renderer.setSize(width, height, false);
   return needResize;
 }
 
+const clock = new THREE.Clock(); 
+
 function animate() {
   requestAnimationFrame(animate);
-  mesh.rotation.y += 0.005;
-  const clock = new THREE.Clock();
   const dt = clock.getDelta();
   if (mixer) {
     mixer.update(dt);
@@ -45,6 +49,7 @@ function animate() {
   }
   renderer.setClearColor(0xffffff, 0);
   renderer.setPixelRatio(devicePixelRatio);
+  controls.update();
   renderer.render(scene,camera);
   if (resizeRendererToDisplaySize(renderer)) {
     const canvas = renderer.domElement;
