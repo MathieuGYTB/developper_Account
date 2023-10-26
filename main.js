@@ -13,12 +13,12 @@ const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
   alpha: true
 });
-const light = new THREE.AmbientLight(0xeeeeee, 4);
+const light = new THREE.PointLight(0xeeeeee, 4);
 scene.add(light);
 
 //set position
 camera.position.set(0, 0, 1);
-light.position.set(0, 0, 1);
+light.position.set(0, 0.7, 1);
 
 function resizeRendererToDisplaySize(renderer) {
   const canvas = renderer.domElement;
