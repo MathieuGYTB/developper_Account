@@ -14,16 +14,23 @@ const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
   alpha: true
 });
-const light = new THREE.PointLight(0xeeeeee, 4);
-scene.add(light);
 
 //set position
 camera.position.set(0, 0.6, 1.5);
 camera.rotateX(50);
-light.position.set(0, 0.7, 1);
+
 //create orbit controller
 const controls = new OrbitControls( camera, canvas );
 controls.update();
+
+//create light
+const light = new THREE.PointLight(0xeeeeee, 40);
+light.position.set(0, 0.6, 1.5);
+light.rotateX(50);
+
+camera.add(light);
+scene.add(camera);
+//function to resize renderer
 function resizeRendererToDisplaySize(renderer) {
   const canvas = renderer.domElement;
   var width = window.innerWidth;
@@ -37,8 +44,10 @@ renderer.setSize(width, height, false);
   return needResize;
 }
 
+//create a clock
 const clock = new THREE.Clock(); 
 
+//function to animate the model
 function animate() {
   requestAnimationFrame(animate);
   const dt = clock.getDelta();
