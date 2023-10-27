@@ -9,9 +9,39 @@
     -webkit-background-clip: text;
   }
 }
+@keyframes moveText2 {
+  0% {
+    transform: translateX(-1000vh);
+  }
+  100% {
+    transform: translateX(0px);
+    visibility: visible;
+    background: linear-gradient(#2b88f2, #104D87);
+    -webkit-background-clip: text;
+    text-shadow: 10px 10px 7px black;
+  }
+}
+@keyframes displayBackground {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
 :root {
   color: transparent;
-  background: radial-gradient(#daf8ff, #359df8);
+  animation: 1s ease-in-out 0s 1 forwards moveText;
+}
+
+h1 {
+  visibility: hidden;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  animation: 1s ease-in-out 1s 1 forwards displayBackground;
+  text-shadow: 8px 8px 8px black;
 }
 
 .canvas {
@@ -36,9 +66,11 @@
   animation: 1s ease-in-out 1s 1 forwards moveText;
 }
 
-.one, .two {
+.two {
   color: transparent;
-  animation: 1s ease-in-out 1s 1 forwards moveText;
+  width: 25%;
+  margin-left: 50%;
+  animation: 1s ease-in-out 1s 1 forwards moveText2;
 }
 
 .three {
@@ -280,6 +312,10 @@
 a {
   color: transparent;
   animation: 1s ease-in-out 1s 1 forwards moveText;
+}
+
+a:hover {
+  color: #FFC53D;
 }
 
 @media screen and (min-width: 550px) {
