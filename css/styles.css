@@ -4,14 +4,14 @@
   }
   to {
     transform: translateX(0px);
-    color: black;
     visibility: visible;
+    background: linear-gradient(#2b88f2, #104D87);
+    -webkit-background-clip: text;
   }
 }
 :root {
   color: transparent;
-  animation: 1s ease-in-out 0s 1 forwards moveText;
-  background: radial-gradient(#DAFFFB, #0c7268);
+  background: radial-gradient(#daf8ff, #359df8);
 }
 
 .canvas {
@@ -294,33 +294,33 @@ a {
 }
 @media screen and (min-width: 1374px) {
   body {
-    margin: 50px;
+    margin: 15px;
     padding: 30px;
     border: 2px solid black;
     box-shadow: 10px 10px 10px black;
-    background-image: url("../assets/images/ciel.jpg");
+    background-image: url("../assets/images/saturn.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 }
 @media screen and (max-width: 1374px) {
   body {
-    margin: 25px;
+    margin: 15px;
     padding: 15px;
     border: 1px solid black;
     box-shadow: 7px 7px 7px black;
-    background-image: url("../assets/images/ciel.jpg");
+    background-image: url("../assets/images/saturn.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 }
 @media screen and (max-width: 1135px) {
   body {
-    margin: 20px;
+    margin: 15px;
     padding: 10px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px black;
-    background-image: url("../assets/images/ciel.jpg");
+    background-image: url("../assets/images/saturn.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -331,7 +331,7 @@ a {
     padding: 5px;
     border: 1px solid black;
     box-shadow: 3px 3px 3px black;
-    background-image: url("../assets/images/ciel.jpg");
+    background-image: url("../assets/images/saturn.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -342,7 +342,7 @@ a {
     padding: 5px;
     border: 1px solid black;
     box-shadow: 2px 2px 2px black;
-    background-image: url("../assets/images/ciel.jpg");
+    background-image: url("../assets/images/saturn.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -355,7 +355,7 @@ a {
     padding: 3px;
     border: 1px solid black;
     box-shadow: 1px 1px 1px black;
-    background-image: url("../assets/images/ciel.jpg");
+    background-image: url("../assets/images/saturn.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -422,11 +422,11 @@ img {
 
 @keyframes backgroundImage {
   0% {
-    background-image: url("../assets/images/photo.jpg");
+    background-image: url("../assets/images/moi.png");
     background-size: cover;
   }
   100% {
-    background-image: url("../assets/images/photo.jpg");
+    background-image: url("../assets/images/moi.png");
     background-size: cover;
     border-radius: 50%;
     visibility: visible;
