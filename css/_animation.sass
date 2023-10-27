@@ -64,7 +64,7 @@ h1
 
 .canvas
   display: grid
-  grid-template-columns: 1fr 0.1fr 2.9fr
+  grid-template-columns: 1fr 0.8fr 2.2fr
   grid-auto-rows: minmax(1px, auto)
 
 #TD
@@ -137,56 +137,6 @@ h1
   grid-column: $grid1-2
   grid-row: 11 / 12
 
-.t1
-  @include style1
-  grid-column: $grid2-3
-  grid-row: $grid1-2
-
-.t2
-  @include style1
-  grid-column: $grid2-3
-  grid-row: $grid2-3
-
-.t3
-  @include style1
-  grid-column: $grid2-3
-  grid-row: 3 / 4
-
-.t4
-  @include style1
-  grid-column: $grid2-3
-  grid-row: 4 / 5
-
-.t5
-  @include style1
-  grid-column: $grid2-3
-  grid-row: 5 / 6
-
-.f1
-  @include style1
-  grid-column: $grid2-3
-  grid-row:  7/ 8 
-
-.f2
-  @include style1
-  grid-column: $grid2-3
-  grid-row:  8/ 9 
-
-.f3
-  @include style1
-  grid-column: $grid2-3
-  grid-row:  9/ 10 
-
-.f4
-  @include style1
-  grid-column: $grid2-3
-  grid-row:  10/ 11 
-
-.f5
-  @include style1
-  grid-column: $grid2-3
-  grid-row:  11/ 12 
-
 .eight
   grid-column: $grid1-2
   grid-row: 6 / 7
@@ -210,6 +160,7 @@ h1
   @include style2
 
 .seventeen
+  margin-left: 15%
   font-size: 12px
   grid-column: 3 / 4
   grid-row: 12 /13
@@ -220,12 +171,17 @@ a
 
 a:hover
     color: #FFC53D
+@media screen and (max-width: 1374px)
+  .seventeen
+    margin-left: 20%
 
-
+@media screen and (max-width: 581px)
+  .seventeen
+    margin-left: 30%
 @media screen and (min-width: 550px)
-  .three, .four, .five, .six, .seven, .nine, .ten, .eleven, .twelve, .thirdteen, .t1, .t2, .t3, .t4, .t5, .f1, .f2, .f3, .f4, .f5
+  .three, .four, .five, .six, .seven, .nine, .ten, .eleven, .twelve, .thirdteen
     margin-left: $px15
 
 @media screen and (max-width: 550px)
-  .three, .four, .five, .six, .seven, .nine, .ten, .eleven, .twelve, .thirdteen, .t1, .t2, .t3, .t4, .t5, .f1, .f2, .f3, .f4, .f5
+  .three, .four, .five, .six, .seven, .nine, .ten, .eleven, .twelve, .thirdteen
     margin-left: $px7
