@@ -210,12 +210,12 @@ h1 {
   animation: 1s ease-in-out 1s 1 forwards moveText;
 }
 
-a {
+.a {
   color: transparent;
   animation: 1s ease-in-out 1s 1 forwards moveText;
 }
 
-a:hover {
+.a:hover {
   color: #FFC53D;
 }
 
@@ -422,4 +422,25 @@ a:hover {
     box-shadow: inset 1px 1px 1px black;
     animation: 2s ease-in-out 1s 1 forwards backgroundImage;
   }
+}
+@keyframes move {
+  100% {
+    visibility: visible;
+  }
+}
+.button {
+  visibility: hidden;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(#2b88f2, #104D87, #359df8);
+  text-decoration: none;
+  padding: 10px;
+  box-shadow: 3px 3px 3px white;
+  animation: 1s ease-in-out 1s 1 forwards move;
+}
+
+.button:active {
+  padding: 5px;
+  box-shadow: 3px 3px 3px white;
 }/*# sourceMappingURL=styles.css.map */
