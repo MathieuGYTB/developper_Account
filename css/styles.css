@@ -239,6 +239,21 @@ h1 {
     margin-left: 7px;
   }
 }
+@media screen and (max-width: 400px) {
+  .two {
+    margin-left: 55%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .two {
+    margin-left: 60%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .two {
+    margin-left: 65%;
+  }
+}
 @media screen and (min-width: 1374px) {
   body {
     margin: 15px;
@@ -423,6 +438,10 @@ h1 {
     animation: 2s ease-in-out 1s 1 forwards backgroundImage;
   }
 }
+.malt {
+  height: 0.8em;
+}
+
 @keyframes move {
   100% {
     visibility: visible;
@@ -443,4 +462,14 @@ h1 {
 .button:active {
   padding: 5px;
   box-shadow: 3px 3px 3px white;
+}
+
+@media screen and (max-width: 330px) {
+  .button {
+    padding: 5px;
+  }
+  .button:active {
+    padding: 2px;
+    box-shadow: 1px 1px 1px white;
+  }
 }/*# sourceMappingURL=styles.css.map */
