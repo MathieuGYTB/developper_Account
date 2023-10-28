@@ -3,9 +3,18 @@
   background-image: url("../assets/images/saturn.jpg")
   background-repeat: no-repeat
   background-size: 100% 100%
+//function to background
+@keyframes background
+  0%
+    background-image: none
+  100%
+
+//define variable
+$animation: 1s ease-in-out 0s 1 forwards background
 
 @media screen and (min-width: 1374px)
   body
+    animation: $animation
     margin: 15px
     padding: 30px
     border: 2px solid black
@@ -14,6 +23,7 @@
 
 @media screen and (max-width: 1374px)
   body
+    animation: $animation
     margin: 15px
     padding: 15px
     border: 1px solid black
@@ -22,6 +32,7 @@
 
 @media screen and (max-width: 1135px)
   body
+    animation: $animation
     margin: 15px
     padding: 10px
     border: 1px solid black
@@ -30,6 +41,7 @@
 
 @media screen and (max-width: 900px)
   body
+    animation: $animation
     margin: 15px
     padding: 5px
     border: 1px solid black
@@ -38,6 +50,7 @@
 
 @media screen and (max-width: 868px)
   body
+    animation: $animation
     margin: 10px
     padding: 5px
     border: 1px solid black
@@ -46,6 +59,7 @@
 
 @media screen and (max-width: 580px)
   body
+    animation: $animation
     margin-top: 12%
     margin-left: 5px
     margin-right: 5px

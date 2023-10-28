@@ -30,7 +30,7 @@
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
-:root {
+:root, body {
   color: transparent;
   animation: 1s ease-in-out 0s 1 forwards moveText;
 }
@@ -269,8 +269,14 @@ h1 {
     margin-left: 70%;
   }
 }
+@keyframes background {
+  0% {
+    background-image: none;
+  }
+}
 @media screen and (min-width: 1374px) {
   body {
+    animation: 1s ease-in-out 0s 1 forwards background;
     margin: 15px;
     padding: 30px;
     border: 2px solid black;
@@ -282,6 +288,7 @@ h1 {
 }
 @media screen and (max-width: 1374px) {
   body {
+    animation: 1s ease-in-out 0s 1 forwards background;
     margin: 15px;
     padding: 15px;
     border: 1px solid black;
@@ -293,6 +300,7 @@ h1 {
 }
 @media screen and (max-width: 1135px) {
   body {
+    animation: 1s ease-in-out 0s 1 forwards background;
     margin: 15px;
     padding: 10px;
     border: 1px solid black;
@@ -304,6 +312,7 @@ h1 {
 }
 @media screen and (max-width: 900px) {
   body {
+    animation: 1s ease-in-out 0s 1 forwards background;
     margin: 15px;
     padding: 5px;
     border: 1px solid black;
@@ -315,6 +324,7 @@ h1 {
 }
 @media screen and (max-width: 868px) {
   body {
+    animation: 1s ease-in-out 0s 1 forwards background;
     margin: 10px;
     padding: 5px;
     border: 1px solid black;
@@ -326,6 +336,7 @@ h1 {
 }
 @media screen and (max-width: 580px) {
   body {
+    animation: 1s ease-in-out 0s 1 forwards background;
     margin-top: 12%;
     margin-left: 5px;
     margin-right: 5px;
