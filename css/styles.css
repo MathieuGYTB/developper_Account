@@ -18,7 +18,7 @@
     visibility: visible;
     background: linear-gradient(#2b88f2, #4695df);
     -webkit-background-clip: text;
-    text-shadow: 4px 4px 14px black;
+    text-shadow: 4px 4px 16px black;
   }
 }
 @keyframes displayBackground {
