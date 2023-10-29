@@ -10,27 +10,27 @@
   }
 }
 @keyframes moveText2 {
-  0% {
+  from {
     transform: translateX(-1000vh);
   }
-  100% {
+  to {
     transform: translateX(0px);
     visibility: visible;
-    background: linear-gradient(#2b88f2, #104D87);
+    background: linear-gradient(#2b88f2, #4695df);
     -webkit-background-clip: text;
-    text-shadow: 10px 10px 7px black;
+    text-shadow: 4px 4px 14px black;
   }
 }
 @keyframes displayBackground {
-  0% {
+  from {
     visibility: hidden;
   }
-  100% {
+  to {
     visibility: visible;
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
-:root, body {
+:root {
   color: transparent;
   animation: 1s ease-in-out 0s 1 forwards moveText;
 }
@@ -270,7 +270,7 @@ h1 {
   }
 }
 @keyframes background {
-  0% {
+  from {
     background-image: none;
   }
 }
