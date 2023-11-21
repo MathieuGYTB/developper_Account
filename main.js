@@ -30,6 +30,7 @@ light.rotateX(50);
 
 camera.add(light);
 scene.add(camera);
+
 //function to resize renderer
 function resizeRendererToDisplaySize(renderer) {
   const canvas = renderer.domElement;
